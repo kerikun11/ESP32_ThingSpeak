@@ -9,7 +9,7 @@
 #include <sys/time.h>
 #include <vector>
 
-#include "json11.hpp"
+#include "json11/json11.hpp"
 
 #define THINGSPEAK_FORMAT_JSON 0
 

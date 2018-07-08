@@ -9,8 +9,12 @@ This is a component of ESP-IDF.
 ```sh
 cd YOUR_PROJECT_DIR
 mkdir components # make local components directory if it does not exist
-git clone https://github.com/kerikun11/ESP32_ThingSpeak components/thingspeak
+git clone --recursive https://github.com/kerikun11/ESP32_ThingSpeak components/thingspeak
 ```
+
+## Using
+
+- as a submodule [json11](https://github.com/dropbox/json11)
 
 ## Example
 
