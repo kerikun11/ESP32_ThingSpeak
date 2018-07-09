@@ -46,7 +46,7 @@ public:
                      generatePlain(feeds));
 #endif
   }
-  bool post(const Feed &feed, int timeout_ms = 2000) {
+  bool post(const Feed &feed) {
     std::string url = url_single;
     url += "&created_at=" + feed.created_at;
     for (auto field : feed.fields)
