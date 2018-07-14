@@ -59,6 +59,8 @@ public:
     timeval curTime;
     time_t now;
     time(&now);
+    if (now < 24 * 60 * 60)
+      return "";
     gettimeofday(&curTime, NULL);
     int milli = curTime.tv_usec / 1000;
     char buf[sizeof "2011-10-08T07:07:09"];
